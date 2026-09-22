@@ -1,0 +1,19 @@
+{
+  "name": "khatalens",
+  "version": "1.0.0",
+  "description": "KhataLens — A khata you don't have to type into. Offline-first PWA for India's micro-businesses.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "dexie": "^4.0.11",
+    "tesseract.js": "^5.1.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}
