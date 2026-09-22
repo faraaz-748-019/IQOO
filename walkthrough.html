@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KhataLens — Product Walkthrough Demo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #080A12;
+      color: #F8FAFC;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 900px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(108, 92, 231, 0.2);
+      border: 1px solid #6C5CE7;
+      color: #A29BFE;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      text-align: center;
+      background: linear-gradient(135deg, #FFFFFF, #CBD5E1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .tagline {
+      font-size: 1.15rem;
+      color: #00D2D3;
+      text-align: center;
+      margin-top: -0.5rem;
+    }
+    .video-card {
+      background: #121626;
+      border: 1px solid #252F48;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 40px rgba(108, 92, 231, 0.15);
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .video-header {
+      width: 100%;
+      background: #181F38;
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #252F48;
+    }
+    .window-dots {
+      display: flex;
+      gap: 6px;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+    .dot-red { background: #FF5F56; }
+    .dot-yellow { background: #FFBD2E; }
+    .dot-green { background: #27C93F; }
+    .url-pill {
+      background: #0B0E1B;
+      padding: 0.25rem 0.85rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      color: #94A3B8;
+      font-family: monospace;
+    }
+    .video-viewport {
+      width: 100%;
+      max-height: 600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+      overflow: hidden;
+    }
+    .video-viewport img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+    .flow-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      width: 100%;
+      margin-top: 1rem;
+    }
+    .step-card {
+      background: #121626;
+      border: 1px solid #252F48;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    .step-num {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #6C5CE7;
+      text-transform: uppercase;
+      margin-bottom: 0.25rem;
+    }
+    .step-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #FFF;
+      margin-bottom: 0.25rem;
+    }
+    .step-desc {
+      font-size: 0.8rem;
+      color: #94A3B8;
+      line-height: 1.4;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #6C5CE7;
+      color: #FFF;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+    }
+    .btn:hover {
+      background: #5B4BC4;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="badge">iQOO Hackathon 2026 · FinTech & Commerce</div>
+    <h1>KhataLens Live Product Walkthrough</h1>
+    <p class="tagline">Point. Speak. Confirm. Done. — A khata you don't have to type into.</p>
+
+    <div class="video-card">
+      <div class="video-header">
+        <div class="window-dots">
+          <div class="dot dot-red"></div>
+          <div class="dot dot-yellow"></div>
+          <div class="dot dot-green"></div>
+        </div>
+        <div class="url-pill">http://localhost:3000/#home</div>
+        <div style="font-size: 0.8rem; color: #10B981; font-weight: 600;">● Live Recording</div>
+      </div>
+      <div class="video-viewport">
+        <img src="KhataLens_Live_Demo.webp" alt="KhataLens Full Product Walkthrough Demonstration" />
+      </div>
+    </div>
+
+    <div class="flow-steps">
+      <div class="step-card">
+        <div class="step-num">Step 1</div>
+        <div class="step-title">Home Dashboard</div>
+        <div class="step-desc">Quick balance cards, recent transactions, and 1-tap capture triggers.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">Step 2</div>
+        <div class="step-title">Voice & Camera</div>
+        <div class="step-desc">Hindi/Telugu/English speech transcription and on-device paper chit OCR.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">Step 3</div>
+        <div class="step-title">Ask my Khata</div>
+        <div class="step-desc">Conversational local queries ("Who owes me the most?") executed in sub-15ms.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">Step 4</div>
+        <div class="step-title">Office Kit & Summary</div>
+        <div class="step-desc">Multi-column reconciliation and 1-click Excel/CSV export for accounting.</div>
+      </div>
+    </div>
+
+    <div style="display: flex; gap: 1rem; margin-top: 0.5rem;">
+      <a href="https://github.com/faraaz-748-019/IQOO" target="_blank" class="btn">
+        <span>View Code on GitHub</span>
+      </a>
+      <a href="KhataLens_Live_Demo.webp" download class="btn" style="background: #182038; border: 1px solid #252F48;">
+        <span>Download Video (.webp)</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

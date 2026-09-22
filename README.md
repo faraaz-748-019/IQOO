@@ -20,6 +20,16 @@
 
 - **GitHub Repository**: [https://github.com/faraaz-748-019/IQOO](https://github.com/faraaz-748-019/IQOO)
 - **Live Demo Link**: Deployable via Netlify directly from this repository (see [Deployment Guide](#-deployment-guide))
+- **Walkthrough Video**: [KhataLens_Live_Demo.webp](KhataLens_Live_Demo.webp) · [Open Interactive Player (walkthrough.html)](walkthrough.html)
+
+---
+
+## 🎥 Walkthrough Video Demonstration
+
+> **Short & Crisp Live Product Demonstration (Point. Speak. Confirm. Done.)**  
+> Showcases all core workflows: Home Dashboard ➔ Multi-Language Voice Capture ➔ Chit OCR Viewfinder ➔ Local Offline Ledger ➔ "Ask my Khata" Natural Language Query ➔ Daily Summary ➔ Office Kit Laptop Handoff & Excel Export.
+
+![KhataLens Walkthrough Video Demo](KhataLens_Live_Demo.webp)
 
 ---
 
